@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <h1>Reserva</h1>
+    <form action="#" method="get">
+        <fieldset>
+        <legend>Dados da viagem</legend>
+        <label for="inome">Nome</label><br>
+        <input type="text" name="nome" id="inome" required><br><br>
+
+        <label for="iemail">Email</label><br>
+        <input type="email" name="email" id="iemail" required><br><br>
+        
+        <input type="checkbox" name="reservaHotal" id="ireservaHotel" checked>
+        <label for="ireservaHotel">Reserva de hospedagem</label><br>
+
+        <input type="checkbox" name="compraPassagens" id="icompraPassagens">
+        <label for="icompraPassagens">Compra de passagens</label><br>
+
+        <input type="checkbox" name="aluguelVeiculos" id="ialuguelVeiculos">
+        <label for="ialuguelVeiculos">Aluguel de veículos</label>
+
+        </fieldset>
+        
+        <fieldset>
+        <legend>Forma de Pagamento</legend>
+        <input type="radio" name="formaPag" id="cartaoCredito" checked>
+        <label for="cartaoCredito">Cartão de Crédito</label><br>
+
+        <input type="radio" name="formaPag" id="boleto">
+        <label for="boleto">Boleto Bancário</label><br>
+
+        <input type="radio" name="formaPag" id="pix">
+        <label for="pix">Pix</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Prazo do pagamento</legend>
+            <select name="serviços" id="iserviços">
+                <option value="aVista" selected>À Vista</option>
+                <option value="5x">5x s/ Juros</option>
+                <option value="10x">10x c/ Juros</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Comentários</legend>
+            <textarea name="comment" id="icomment" cols="30" rows="5"></textarea>
+        </fieldset>
+
+        <br><input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
